@@ -1,17 +1,15 @@
-Wishing you a very happy birthday! May your day be filled with love, laughter, and lots of fun. May you be surrounded by the people who love and cherish you the most. May you
-continue to shine and inspire everyone around you with your amazing spirit and kindness. Have a fabulous day
-==html==
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Birthday Wishes</title>
 </head>
 <body>
-	<img src="https://drive.google.com/file/d/16tTHtQEZTZo-cdNOvlDh-5Xus81PqYUL/view?usp=share_link" alt="Happy Birthday!">
-	<h1>Happy Birthday! %s </h1>
+
+	<h1>Happy Birthday! {} </h1>
 	<p>Dear {name},</p>
 	<p>Wishing you a very happy birthday and many more to come! May your day be filled with joy, love, and laughter.</p>
 	<p>Best wishes,</p>
+	<img src="cid:image1" width="100%" alt="Happy Birthday!">
 	<p>from our SightSpectrum Team</p>
 </body>
 </html>

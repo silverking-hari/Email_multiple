@@ -1,8 +1,3 @@
-It's your birthday! May this day be as special and wonderful as you are.
-May you receive all the love, happiness, and blessings that you deserve.
-May your year be filled with exciting opportunities, new adventures, and unforgettable experiences.
-Enjoy your special day to the fullest!
-==html==
 <html>
 <head>
 	<title></title>
@@ -68,8 +63,8 @@ Enjoy your special day to the fullest!
 </head>
 <body>
 	<div class="container">
-		<img class="logo" src="https://drive.google.com/file/d/16tTHtQEZTZo-cdNOvlDh-5Xus81PqYUL/view?usp=share_link" alt="Happy Birthday!">
-		<h1 class="header">Happy Birthday! %s </h1>
+		<img class="logo" src="cid:image1" alt="Happy Birthday!">
+		<h1 class="header">Happy Birthday! {} </h1>
 		<p class="message">Dear {name},</p>
 		<p class="message">Wishing you a very happy birthday and many more to come! May your day be filled with joy, love, and laughter.</p>
 		<p class="signature">Best wishes,<br>SightSpectrum Team</p>

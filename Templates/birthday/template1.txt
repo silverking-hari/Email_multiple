@@ -1,5 +1,3 @@
-Wishing you a happy birthday!
-==html==
 <html>
 <head>
     <title></title>
@@ -49,9 +47,9 @@ Wishing you a happy birthday!
 </head>
 <body>
 	<div>
-		<h1>Happy Birthday! %s </h1>
+		<h1>Happy Birthday! {} </h1>
 		<p>Wishing you a wonderful day filled with happiness, joy, and lots of cake!</p>
-		<img src="cid:im" alt="Birthday image">
+		<img src="cid:image1" width="100%" alt="Birthday image">
 		<p>May all your dreams and wishes come true on your special day!</p>
 	</div>
 </body>
