@@ -1,0 +1,78 @@
+It's your birthday! May this day be as special and wonderful as you are.
+May you receive all the love, happiness, and blessings that you deserve.
+May your year be filled with exciting opportunities, new adventures, and unforgettable experiences.
+Enjoy your special day to the fullest!
+==html==
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			background-color: #F5F5F5;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		.container {
+			background-color: #FFFFFF;
+			border: 1px solid #CCCCCC;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+		}
+
+		.logo {
+			margin-bottom: 20px;
+		}
+
+		.header {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		.message {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+
+		.signature {
+			font-size: 20px;
+			font-weight: bold;
+			margin-top: 30px;
+		}
+
+		@media (max-width: 600px) {
+			.container {
+				padding: 10px;
+			}
+
+			.header {
+				font-size: 20px;
+			}
+
+			.message {
+				font-size: 16px;
+			}
+
+			.signature {
+				font-size: 18px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="logo" src="https://drive.google.com/file/d/16tTHtQEZTZo-cdNOvlDh-5Xus81PqYUL/view?usp=share_link" alt="Happy Birthday!">
+		<h1 class="header">Happy Birthday! %s </h1>
+		<p class="message">Dear {name},</p>
+		<p class="message">Wishing you a very happy birthday and many more to come! May your day be filled with joy, love, and laughter.</p>
+		<p class="signature">Best wishes,<br>SightSpectrum Team</p>
+	</div>
+</body>
+</html>

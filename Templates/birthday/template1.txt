@@ -1,0 +1,58 @@
+Wishing you a happy birthday!
+==html==
+<html>
+<head>
+    <title></title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: white;
+			border-radius: 5px;
+			padding: 20px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+
+		h1, p {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 24px;
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			color: #666;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Happy Birthday! %s </h1>
+		<p>Wishing you a wonderful day filled with happiness, joy, and lots of cake!</p>
+		<img src="cid:im" alt="Birthday image">
+		<p>May all your dreams and wishes come true on your special day!</p>
+	</div>
+</body>
+</html>
