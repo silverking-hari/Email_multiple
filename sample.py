@@ -92,6 +92,13 @@ def anniversary_event():
 def birthday_event():
     tem = "Templates\\birthday"
     random_file = random.choice((os.listdir(current_dir / 'Templates' / 'birthday')))
+    sub = ("HAPPY BIRTHDAY!", "❤ Happy Birthday from us!", "It's Almost Your Birthday , Let’s Celebrate?,",
+           "Have the Best. Birthday. Ever.", "Let’s celebrate your birthday!",
+           "We Heard It’s Your Birthday!", "Your Birthday Just Got Even More Empowering.",
+           "happy happy happy birthday")
+    subj = random.choice(sub)
+
+    # Algorithm for find the column header
     dob_column = find_column(df, dob_pattern)
     if dob_column is None:
         print('No date of birth column found')
@@ -105,23 +112,13 @@ def birthday_event():
     # Filter the dataframe to rows where the month and day of 'dob_header' matches the current month and day
     dob_matches = df[(df[dob_column].dt.month == current_month) & (df[dob_column].dt.day == current_day)]
 
-    sub = ("HAPPY BIRTHDAY!", "❤ Happy Birthday from us!", "It's Almost Your Birthday , Let’s Celebrate?,",
-           "Have the Best. Birthday. Ever.", "Let’s celebrate your birthday!",
-           "We Heard It’s Your Birthday!", "Your Birthday Just Got Even More Empowering.",
-           "happy happy happy birthday")
-    subj = random.choice(sub)
     # Print the matching rows
     if len(dob_matches) > 0:
-        print('Matching date of birth:')
-        print(dob_matches)
-    else:
-        print('No matching date of birth found')
-    print(dob_matches[email_column].unique())
-    print(dob_matches[name_column])
+        for e, n in zip(dob_matches[email_column].unique(), dob_matches[name_column]):
+            calling_mail(e, n, subj, tem, random_file)
+        smtp_logout(server)
 
-    for e, n in zip(dob_matches[email_column].unique(), dob_matches[name_column]):
-        calling_mail(e, n, subj, tem, random_file)
-    smtp_logout(server)
+
     '''
     for emp in df[email_column].unique():
         if emp in dob_matches[email_column].unique():
